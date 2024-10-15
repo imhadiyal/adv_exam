@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "788945908764",
+    "project_id": "adv-exam-da923",
+    "storage_bucket": "adv-exam-da923.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788945908764:android:61ec1ad5ba8fa7e0e41bd9",
+        "android_client_info": {
+          "package_name": "com.example.post_api_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuCyNYSGetFEDd7Cggl6EgSFbAfot1ug4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
