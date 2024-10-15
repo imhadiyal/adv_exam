@@ -3,8 +3,8 @@ import 'package:post_api_app/controller/controller.dart';
 import 'package:post_api_app/controller/sql_controller.dart';
 import 'package:provider/provider.dart';
 
-import 'controller/firebase_controller.dart';
-import 'modals.dart';
+import '../controller/firebase_controller.dart';
+import '../modals.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

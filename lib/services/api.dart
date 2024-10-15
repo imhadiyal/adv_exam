@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:logger/logger.dart';
 
-import 'modals.dart';
+import '../modals.dart';
 
 class Api {
   Api._();
