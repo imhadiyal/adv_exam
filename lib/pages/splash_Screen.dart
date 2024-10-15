@@ -12,8 +12,8 @@ class SplashScreen extends StatelessWidget {
 
     return const Scaffold(
       body: Center(
-        child:
-            Text('Welcome to the Auction App', style: TextStyle(fontSize: 24)),
+        child: Text('Welcome to\nthe E-Commerce App',
+            style: TextStyle(fontSize: 24)),
       ),
     );
   }

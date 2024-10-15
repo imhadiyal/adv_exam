@@ -42,21 +42,49 @@ class HomePage extends StatelessWidget {
                     product: apiController.allProduct[index]);
                 showDialog(
                   context: context,
-                  builder: (context) => AlertDialog(
-                    title: TextFormField(
-                      onChanged: (val) {
-                        dbController.controller.text = val;
-                      },
-                    ),
-                    actions: [
-                      ElevatedButton(
-                        onPressed: () {
-                          dbController.insertData(
-                              controller: apiController.allProduct[index]);
+                  builder: (context) => SizedBox(
+                    height: 100,
+                    width: 200,
+                    child: AlertDialog(
+                      title: TextFormField(
+                        onChanged: (val) {
+                          dbController.controller.text = val;
                         },
-                        child: const Text("Add"),
                       ),
-                    ],
+                      actions: [
+                        SingleChildScrollView(
+                          scrollDirection: Axis.horizontal,
+                          child: Row(
+                            children: [
+                              ElevatedButton(
+                                onPressed: () {
+                                  dbController.insertData(
+                                      controller:
+                                          apiController.allProduct[index]);
+                                },
+                                child: const Text("Add"),
+                              ),
+                              ElevatedButton(
+                                onPressed: () {
+                                  dbController.updateData(
+                                      controller:
+                                          apiController.allProduct[index]);
+                                },
+                                child: const Text("Update"),
+                              ),
+                              ElevatedButton(
+                                onPressed: () {
+                                  dbController.deleteData(
+                                      controller:
+                                          apiController.allProduct[index]);
+                                },
+                                child: const Text("Delete"),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 );
               },
